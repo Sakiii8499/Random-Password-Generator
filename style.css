@@ -8,9 +8,6 @@
     --primary-color: white;
     --secondary-color: rgb(133, 32, 133);
     --tertiary-color: rgb(184, 44, 184);
-    --fourth-color: ;
-    --fifth-color: ;
-    --sixth-color: ;
 }
 body{
     background-color: var(--secondary-color);
@@ -20,14 +17,10 @@ body{
 }
 .container{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--primary-color);
-    margin: auto;
-    height: 50%;
-    width: 30%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     border: 1px solid black;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -58,40 +51,3 @@ body{
 #btn1{
     margin-right: 1rem;
 }
-.option{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.3rem;
-    font-size: 1rem;
-    color: var(--secondary-color);
-}
-#length{
-    border: 1px solid var(--secondary-color);
-    outline: none; /*remove outline of textbox*/
-}
-input[type="checkbox"]{
-    appearance: none;
-    height: 1rem;
-    width: 1rem;
-    background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
-    cursor: pointer;
-    border-radius: 0.2rem;
-}
-input[type="checkbox"]:after{
-    content: "\f00c";
-    color: var(--primary-color);
-    font-size: 0.9rem;
-    font-family: "Font awesome 5 free";
-    font-weight: 900;
-    display: none;
-}
-input[type="checkbox"]:checked{
-    background-color: var(--secondary-color);
-}
-input[type="checkbox"]:checked:after{
-    display: block;
-}
-
-    
-
