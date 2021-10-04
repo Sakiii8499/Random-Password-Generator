@@ -15,5 +15,6 @@ function generate() {
 function copy() {
   let copyText = document.getElementById("password");
   copyText.select();
-  document.exeCommand("copy");
+  document.execCommand("copy");
 }
+
